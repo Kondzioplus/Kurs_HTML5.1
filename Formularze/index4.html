@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Moja pierwsza strona</title>
+</head>
+<body>
+	<h1>Tworzenie formularzy w HTML</h1>
+	<form action="" method="">
+		<label for="name">Imię:</label><br>
+		<input type="text" id="name"><br>
+		<label for="email">Email:</label><br>
+		<input type="email" id="email"><br>
+		<!--znacznik LABEL definiuje POLE Z TEKSTEM(nazwa komórki/etykiety), atrybut FOR definiuje NAZWĘ tego pola. Atrybut FOR z wynikiem SEARCH oznacza WYSZUKIWARKE-->
+        <label for="search">Szukaj: </label><br>
+        <!--znacznik INPUT definiuje POLE TEKSTOWE w które wstawimy dane, atrybut TYPE z wynikiem SEARCH określa WYSZUKIWARE, atrybut ID definiuje UNIKALNE ID.-->
+		<input type="search" id="search"><br>
+		<!--znacznik LABEL definiuje POLE Z TEKSTEM(nazwa komórki/etykiety), atrybut FOR definiuje NAZWĘ tego pola. Atrybut FOR z wynikiem PASSWORD oznacza HASŁO-->
+        <label for="password">Hasło: </label><br>
+		<!--znacznik INPUT definiuje POLE TEKSTOWE w które wstawimy dane, atrybut TYPE z wynikiem PASSWORD określa HASŁO, atrybut ID definiuje UNIKALNE ID.-->
+        <input type="password" id="password"><br>
+		<label for="message">Wiadomość: </label><br>
+		<textarea id="message"></textarea><br>
+		<button type="submit">Wyślij wiadomość</button>
+		<button type="reset">Zresetuj</button>
+	</form>
+</body>
+</html>
