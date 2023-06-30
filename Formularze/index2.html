@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--kodowanie-->
+	<meta charset="UTF-8">
+	<!--tytuł na górze strony-->
+	<title>Moja pierwsza strona</title>
+</head>
+<body>
+	<h1>Tworzenie formularzy w HTML</h1>
+	<!--znacznik FORM definiuje FORMULARZ, atrybut ACTION definiuje miejsce docelowe wysyłki(link), atrybut METHOD definiuje metode przesyłania (GET, POST)-->
+	<form action="" method="">
+		<!--znacznik LABEL definiuje POLE TEKSTOWE(nazwa komórki/etykiety), atrybut FOR definiuje NAZWĘ tego pola.-->
+        <label for="name">Imię:</label><br>
+		<!--znacznik INPUT definiuje POLE TEKSTOWE w które wstawimy dane, atrybut TYPE określa rodzaj danych, atrybut ID definiuje UNIKALNE ID.-->
+        <input type="text" id="name"><br><!--znacznik BR przejscie do nastepnej linijki-->
+		<label for="email">Email:</label><br>
+		<input type="email" id="email"><br>
+		<label for="message">Wiadomość: </label><br>
+		<!--znacznik TEXTAREA definiuje POLE TREKSTOWE które możemy POWIEKSZAĆ/POMNIEJSZAĆ, posiada element OTWIERAJACY I ZAMYKAJACY!-->
+        <textarea id="message"></textarea>
+	</form>
+</body>
+</html>
