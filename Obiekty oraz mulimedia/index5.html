@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Multimedia i obiekty</title>
+</head>
+<body>
+
+	<header>
+		<nav>
+			<ul>
+				<li><a href="">Start</a></li>
+				<li><a href="">Oferta</a></li>
+				<li><a href="">Portfolio</a></li>
+				<li><a href="">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main role="main">
+		<h1>Element CANVAS</h1>
+        <!--znacznik CANVAS pozwala tworzyc animacje w jezyku JavaScript-->
+		<canvas id="canvas" width="400px" height="400px">
+			<p>Twoja przeglądarka nie obsługuje CANVAS</p>
+		</canvas>
+	</main>
+	<footer>To jest stopka strony</footer>
+    <!--znacznik SCRIPT pozwala napisać kod w jezyku JavaScript-->
+	<script>
+        //zmienna canvas uzywa metody getElementById(pobiera element o określonym identyfikatorze)
+		var canvas = document.getElementById('canvas');
+		//zmienna ctx używa metody getContext(zwraca rysunek)
+        var ctx = canvas.getContext('2d');
+		//wypełnienie(czerwone)
+        ctx.fillStyle = 'red';
+		//kształt(prostokąt)
+        ctx.fillRect(0,0,200,200);
+		
+        ctx.fillStyle = 'green';
+		
+        ctx.fillRect(0,120,100,230);
+	</script>
+</body>
+</html>
